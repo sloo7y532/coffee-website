@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Coffee <span>Hub</span></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!--  Dark mode toggle -->
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <!-- === Dark mode toggle  -->
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Freshly Brewed Coffee</h1>
+        <p>Experience the finest coffee made with passion and precision.</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </section>
+
+    <section id="banner">
+      <h2>Special Offer!</h2>
+      <p>Buy 1 Get 1 Free on all Cappuccinos this weekend!</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>
+            Welcome to <strong>Coffee Hub</strong>, your go-to destination for
+            the finest coffee experience. Our journey began with a simple
+            passion – bringing people together over the perfect cup of coffee.
+            From sourcing the best coffee beans to crafting exquisite brews, we
+            take pride in every sip we serve.
+          </p>
+
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>☕ **Premium, hand-selected coffee beans**</li>
+            <li>🌱 **Sustainably sourced & ethically grown**</li>
+            <li>👨‍🍳 **Expert baristas crafting perfection**</li>
+            <li>🏡 **A cozy, welcoming atmosphere**</li>
+          </ul>
+
+          <h3>Our Specialties</h3>
+          <p>
+            Whether you're in the mood for a **bold espresso**, a **creamy
+            latte**, or a **refreshing iced coffee**, we have something special
+            for every coffee lover. Pair your drink with our **freshly baked
+            pastries** for the ultimate experience.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="https://www.rockrobinsid.com/wp-content/uploads/2023/09/blog-img-012-4.jpg"
+            alt="Cozy coffee shop interior"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div
+          class="menu-item"
+          onclick="openModal('Espresso', 'Strong and bold coffee with rich aroma.', '$3.50', '/img/espresso.png')"
+        >
+          <img src="/img/espresso.png" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p>$3.50</p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="openModal('Cappuccino', 'Smooth and creamy with a perfect balance of coffee and milk.', '$4.50', '/img/cappuccino.png')"
+        >
+          <img src="/img/cappuccino.png" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>$4.50</p>
+        </div>
+
+        <div
+          class="menu-item"
+          onclick="openModal('Latte', 'Creamy latte with a hint of vanilla and frothy milk.', '$4.00', '/img/latte.png')"
+        >
+          <img src="/img/latte.png" alt="Latte" />
+          <h3>Latte</h3>
+          <p>$4.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pop-up Modal -->
+    <div id="coffeeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Coffee Image" />
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <p id="modal-price" class="price"></p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="close1" onclick="closeModal()"></div>
+    </div>
+    <!-- ===Pop-up Modal=== -->
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Coffee Hub. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
