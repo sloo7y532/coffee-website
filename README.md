@@ -169,7 +169,7 @@ Edit the CSS variables in `styles.css` to customize the color scheme:
 ## 🚀 Deployment
 ## 🎮 Live Demo
 
-Check out the live demo of Coffee Hub: [View Demo](https://coffeehub-demo.netlify.app)
+Check out the live demo of Coffee Hub: [View Demo](https://coffee-website-ivory-three.vercel.app/)
 
 ### Demo Features
 
