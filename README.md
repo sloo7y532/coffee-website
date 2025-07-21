@@ -166,7 +166,6 @@ Edit the CSS variables in `styles.css` to customize the color scheme:
 - Change contact details in the footer and contact section
 - Modify business hours in the hours section
 
-## 🚀 Deployment
 ## 🎮 Live Demo
 
 Check out the live demo of Coffee Hub: [View Demo](https://coffee-website-ivory-three.vercel.app/)
@@ -180,21 +179,6 @@ Check out the live demo of Coffee Hub: [View Demo](https://coffee-website-ivory-
 - Test the contact form functionality
 - Experience responsive design across devices
 
-### GitHub Pages
-
-1. Upload files to a GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Access your site at `https://username.github.io/repository-name`
-
-### Other Hosting Platforms
-
-- **Netlify**: Drag and drop the folder
-- **Vercel**: Connect your GitHub repository
-- **Traditional Web Hosting**: Upload files via FTP
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
